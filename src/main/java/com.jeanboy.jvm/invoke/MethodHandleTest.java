@@ -3,6 +3,7 @@ package com.jeanboy.jvm.invoke;
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;
+import java.lang.reflect.Method;
 
 public class MethodHandleTest {
 
@@ -19,11 +20,15 @@ public class MethodHandleTest {
             MethodHandles.Lookup lookup = MethodHandles.lookup();
             MethodHandle methodHandle = lookup.findVirtual(test.getClass(), "hello", methodType);
             methodHandle.invoke(test);
+
+
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }
-    }
 
+
+
+    }
 
 
 }
