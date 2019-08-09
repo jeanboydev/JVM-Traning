@@ -20,10 +20,12 @@ public class Dispatch3 {
     }
 
     static class Son extends Father {
+        @Override
         public void play(Ball ball) {
             System.out.println("Son play ball");
         }
 
+        @Override
         public void play(Water water) {
             System.out.println("Son play water");
         }

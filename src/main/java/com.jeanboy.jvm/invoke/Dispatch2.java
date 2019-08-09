@@ -1,5 +1,8 @@
 package com.jeanboy.jvm.invoke;
 
+/**
+ * 重写
+ */
 public class Dispatch2 {
 
     static class Animal {
@@ -9,12 +12,14 @@ public class Dispatch2 {
     }
 
     static class Dog extends Animal {
+        @Override
         public void sound() {
             System.out.println("Dog wang...");
         }
     }
 
     static class Cat extends Animal {
+        @Override
         public void sound() {
             System.out.println("Cat miao...");
         }
