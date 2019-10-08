@@ -20,5 +20,7 @@ public class TestThread {
             }
         }).start();
 
+        Thread.yield();
+
     }
 }

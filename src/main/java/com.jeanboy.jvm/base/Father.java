@@ -7,17 +7,18 @@ public class Father {
     int c = 3;
 
     {
-        System.out.println(Father.class.getSimpleName() + "==={}====");
+        int d = 1;
+        System.out.println(Father.class.getSimpleName() + "==={}===d=");
     }
 
     static {
-        int d = 0;
-        System.out.println(Father.class.getSimpleName() + "===static====");
+        int e = 2;
+        System.out.println(Father.class.getSimpleName() + "===static==e==");
     }
 
     public Father() {
-        System.out.println(Father.class.getSimpleName() + "===构造方法====");
+        System.out.println(Father.class.getSimpleName() + "===构造方法==f==");
 
-        final int e = 5;
+        final int f = 5;
     }
 }
